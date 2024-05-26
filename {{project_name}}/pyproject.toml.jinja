@@ -1,9 +1,9 @@
 [project]
-name = "cli"
-version = "0.1.0"
-description = "Add your description here"
+name = "{{project_name}}"
+version = "{{version}}"
+description = "{{project_description}}"
 authors = [
-    { name = "TianaNanta", email = "andrianjakananta@gmail.com" }
+    { name = "{{author}}", email = "{{email}}" }
 ]
 dependencies = [
     "pydantic>=2.7.1",
@@ -15,7 +15,7 @@ requires-python = ">= 3.9"
 license = { text = "MIT" }
 
 [project.scripts]
-"cli" = "cli:main"
+"{{package_name}}" = "{{package_name}}:main"
 
 [build-system]
 requires = ["hatchling"]
@@ -29,4 +29,4 @@ dev-dependencies = []
 allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/cli"]
+packages = ["src/{{package_name}}"]
