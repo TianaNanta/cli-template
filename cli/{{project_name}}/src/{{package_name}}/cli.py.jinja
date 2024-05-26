@@ -4,7 +4,7 @@ from rich import print
 from {{package_name}}.config import settings
 
 app = typer.Typer(
-    name="cli", help="Description"
+    name="{{project_name}}", help="{{project_description}}"
 )
 
 
@@ -23,4 +23,4 @@ def goodbye(name: str, formal: bool = False):
 
 @app.command()
 def version():
-    print(f"{{package_name}} [green]v{settings.VERSION}[/green]")
+    print(f"{{project_name}} [green]v{settings.VERSION}[/green]")
