@@ -1,3 +1,7 @@
+from cli.cli import app
+
+
 def main() -> int:
-    print("Hello from cli!")
+    app()
     return 0
+
